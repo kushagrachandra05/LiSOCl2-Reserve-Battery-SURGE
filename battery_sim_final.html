@@ -1,0 +1,2801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="COMSOL Multiphysics model report" />
+    <meta name="keywords" content="comsol multiphysics model report" />
+    <!-- saved from url=(0014)about:internet -->
+    <title>Battery attempt</title>
+    <link rel="stylesheet" href="battery_sim_final_files/report.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div>
+      <a href="https://www.comsol.com">
+        <img src="battery_sim_final_files/logo.png" width="159" height="34" style="float:right;border:none" />
+      </a>
+    </div>
+    <div class="ReportTitle" id="cs5838791">
+       <span>Battery attempt</span>
+    </div>
+    <h4 id="cs3344331">
+       <span>Report date</span>
+    </h4>
+    <p>
+      <a name="cs9461348">
+         <span>Jun 11, 2026, 2:37:09 AM</span>
+      </a>
+    </p>
+    <div class="TocHeading">
+       <span>Contents</span>
+    </div>
+    <table style="border:0px;">
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs1133313">
+             <span>Global Definitions</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>1.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs4085370">
+             <span>Parameters</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>1.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs5213739">
+             <span>Functions</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs6448839">
+             <span>Component 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs4437144">
+             <span>Definitions</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs2220491">
+             <span>Geometry 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs6673103">
+             <span>Materials</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.4.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs3280981">
+             <span>Lithium-Ion Battery</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.5.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs2373234">
+             <span>Mesh 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs8859486">
+             <span>Study 2</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>3.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs4549910">
+             <span>Parametric Sweep</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>3.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs7525731">
+             <span>Material Sweep</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>3.3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs4805677">
+             <span>Current Distribution Initialization</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>3.4.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs8488050">
+             <span>Time Dependent</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>4.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs9178754">
+             <span>Results</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs6594452">
+             <span>Datasets</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs2847258">
+             <span>Plot Groups</span>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs5711648">
+      <a name="cs1133313">
+         <span>1. Global Definitions</span>
+      </a>
+    </h2>
+    <table border="1">
+      <tr>
+        <td>
+           <span>Date</span>
+        </td>
+        <td>
+           <span>May 30, 2026, 2:49:02 AM</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs3703223">
+           <span>Global settings</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Name</span>
+        </td>
+        <td>
+           <span>Battery attempt.mph</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Path</span>
+        </td>
+        <td>
+           <span>C:\Users\kusha\OneDrive\Documents\COMSOL\Simulations\battery_attempt.mph</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Version</span>
+        </td>
+        <td>
+           <span>COMSOL Multiphysics 6.3 (Build: 638)</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6741836">
+           <span>Used products</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Battery Design Module</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>COMSOL Multiphysics</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2717425">
+           <span>Computer information</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>CPU</span>
+        </td>
+        <td>
+           <span>Intel64 Family 6 Model 183 Stepping 1, 14 cores, 31.71 GB RAM</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Operating system</span>
+        </td>
+        <td>
+           <span>Windows 11</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs8008831">
+      <a name="cs4085370">
+         <span>1.1. Parameters</span>
+      </a>
+    </h3>
+    <table border="1">
+      <caption>
+        <a name="cs3404003">
+           <span>Parameters 1</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Name</span>
+        </th>
+        <th>
+           <span>Expression</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+        <th>
+           <span>Description</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Lp</span>
+        </td>
+        <td>
+           <span>75[um]</span>
+        </td>
+        <td>
+           <span>7.5E−5 m</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Ls</span>
+        </td>
+        <td>
+           <span>25[um]</span>
+        </td>
+        <td>
+           <span>2.5E−5 m</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Ln</span>
+        </td>
+        <td>
+           <span>80[um]</span>
+        </td>
+        <td>
+           <span>8E−5 m</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Iapp</span>
+        </td>
+        <td>
+           <span>Cap * (C_rate / 1[h])</span>
+        </td>
+        <td>
+           <span>5 A</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>T</span>
+        </td>
+        <td>
+           <span>298[K]</span>
+        </td>
+        <td>
+           <span>298 K</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>i_1C</span>
+        </td>
+        <td>
+           <span>17.5[A/m^2]</span>
+        </td>
+        <td>
+           <span>17.5 A/m²</span>
+        </td>
+        <td>
+           <span>1C discharge current</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Ds_neg</span>
+        </td>
+        <td>
+           <span>3.9e-14[m^2/s]</span>
+        </td>
+        <td>
+           <span>3.9E−14 m²/s</span>
+        </td>
+        <td>
+           <span>Solid phase Li-diffusivity negative electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Ds_pos</span>
+        </td>
+        <td>
+           <span>1e-13[m^2/s]</span>
+        </td>
+        <td>
+           <span>1E−13 m²/s</span>
+        </td>
+        <td>
+           <span>Solid phase Li-diffusivity positive electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>rp_neg</span>
+        </td>
+        <td>
+           <span>12.5e-6[m]</span>
+        </td>
+        <td>
+           <span>1.25E−5 m</span>
+        </td>
+        <td>
+           <span>Particle radius negative electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>rp_pos</span>
+        </td>
+        <td>
+           <span>8e-6[m]</span>
+        </td>
+        <td>
+           <span>8E−6 m</span>
+        </td>
+        <td>
+           <span>Particle radius positive electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>epsl_pos</span>
+        </td>
+        <td>
+           <span>0.63</span>
+        </td>
+        <td>
+           <span>0.63</span>
+        </td>
+        <td>
+           <span>Electrolyte phase volume fraction, positive electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>epss_pos</span>
+        </td>
+        <td>
+           <span>1 - epsl_pos - epss_filler_pos</span>
+        </td>
+        <td>
+           <span>0.297</span>
+        </td>
+        <td>
+           <span>Electrode phase volume fraction, positive electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>epss_filler_pos</span>
+        </td>
+        <td>
+           <span>0.073</span>
+        </td>
+        <td>
+           <span>0.073</span>
+        </td>
+        <td>
+           <span>Conductive filler phase volume fraction, positive electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>cl_0</span>
+        </td>
+        <td>
+           <span>2000[mol/m^3]</span>
+        </td>
+        <td>
+           <span>2000 mol/m³</span>
+        </td>
+        <td>
+           <span>Initial electrolyte salt concentration</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>epsl_neg</span>
+        </td>
+        <td>
+           <span>0.503</span>
+        </td>
+        <td>
+           <span>0.503</span>
+        </td>
+        <td>
+           <span>Electrolyte phase volume fraction, negative electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>epss_filler_neg</span>
+        </td>
+        <td>
+           <span>0.026</span>
+        </td>
+        <td>
+           <span>0.026</span>
+        </td>
+        <td>
+           <span>Conductive filler phase volume fraction, negative</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>epss_neg</span>
+        </td>
+        <td>
+           <span>1 - epsl_neg - epss_filler_neg</span>
+        </td>
+        <td>
+           <span>0.471</span>
+        </td>
+        <td>
+           <span>Solid phase vol-fraction negative electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>csmax_neg</span>
+        </td>
+        <td>
+           <span>26390[mol/m^3]</span>
+        </td>
+        <td>
+           <span>26390 mol/m³</span>
+        </td>
+        <td>
+           <span>Max solid phase concentration, negative electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>csmax_pos</span>
+        </td>
+        <td>
+           <span>22860[mol/m^3]</span>
+        </td>
+        <td>
+           <span>22860 mol/m³</span>
+        </td>
+        <td>
+           <span>Max solid phase concentration, positive electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>cs0_neg</span>
+        </td>
+        <td>
+           <span>14870[mol/m^3]</span>
+        </td>
+        <td>
+           <span>14870 mol/m³</span>
+        </td>
+        <td>
+           <span>Initial concentration negative active electrode material</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>cs0_pos</span>
+        </td>
+        <td>
+           <span>3900[mol/m^3]</span>
+        </td>
+        <td>
+           <span>3900 mol/m³</span>
+        </td>
+        <td>
+           <span>Initial concentration positive active electrode material</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Ks_neg</span>
+        </td>
+        <td>
+           <span>100[S/m]</span>
+        </td>
+        <td>
+           <span>100 S/m</span>
+        </td>
+        <td>
+           <span>Solid phase conductivity negative electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Ks_pos</span>
+        </td>
+        <td>
+           <span>100[S/m]</span>
+        </td>
+        <td>
+           <span>100 S/m</span>
+        </td>
+        <td>
+           <span>Solid phase conductivity positive electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>i0_neg_ref</span>
+        </td>
+        <td>
+           <span>0.11[mA/cm^2]</span>
+        </td>
+        <td>
+           <span>1.1 A/m²</span>
+        </td>
+        <td>
+           <span>Exchange current density at reference conditions, negative electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>i0_pos_ref</span>
+        </td>
+        <td>
+           <span>0.08[mA/cm^2]</span>
+        </td>
+        <td>
+           <span>0.8 A/m²</span>
+        </td>
+        <td>
+           <span>Exchange current density at reference conditions, positive electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>cl_ref</span>
+        </td>
+        <td>
+           <span>2000[mol/m^3]</span>
+        </td>
+        <td>
+           <span>2000 mol/m³</span>
+        </td>
+        <td>
+           <span>Reference electrolyte salt concentration</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>cs_neg_ref</span>
+        </td>
+        <td>
+           <span>14870[mol/m^3]</span>
+        </td>
+        <td>
+           <span>14870 mol/m³</span>
+        </td>
+        <td>
+           <span>Reference concentration negative active electrode material</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>cs_pos_ref</span>
+        </td>
+        <td>
+           <span>3900[mol/m^3]</span>
+        </td>
+        <td>
+           <span>3900 mol/m³</span>
+        </td>
+        <td>
+           <span>Reference concentration negative active electrode material</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>k_neg</span>
+        </td>
+        <td>
+           <span>i0_neg_ref/(F_const*(cs_neg_ref[m^3/mol])^0.5*((csmax_neg - cs_neg_ref)[m^3/mol])^0.5)[mol/m^3]</span>
+        </td>
+        <td>
+           <span>8.7106E−10 m/s</span>
+        </td>
+        <td>
+           <span>Rate constant, negative electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>k_pos</span>
+        </td>
+        <td>
+           <span>i0_pos_ref/(F_const*(cs_pos_ref[m^3/mol])^0.5*((csmax_pos - cs_pos_ref)[m^3/mol])^0.5)[mol/m^3]</span>
+        </td>
+        <td>
+           <span>9.6422E−10 m/s</span>
+        </td>
+        <td>
+           <span>Rate constant, positive electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>brugg</span>
+        </td>
+        <td>
+           <span>3.3</span>
+        </td>
+        <td>
+           <span>3.3</span>
+        </td>
+        <td>
+           <span>Bruggeman coefficient</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>t_disch_stop</span>
+        </td>
+        <td>
+           <span>2000[s]</span>
+        </td>
+        <td>
+           <span>2000 s</span>
+        </td>
+        <td>
+           <span>Discharge duration</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>t_ocp</span>
+        </td>
+        <td>
+           <span>300[s]</span>
+        </td>
+        <td>
+           <span>300 s</span>
+        </td>
+        <td>
+           <span>Open circuit duration</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>t_charge_stop</span>
+        </td>
+        <td>
+           <span>2000[s]</span>
+        </td>
+        <td>
+           <span>2000 s</span>
+        </td>
+        <td>
+           <span>Charge duration</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>L_neg</span>
+        </td>
+        <td>
+           <span>100e-6[m]</span>
+        </td>
+        <td>
+           <span>1E−4 m</span>
+        </td>
+        <td>
+           <span>Length of negative electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>L_sep</span>
+        </td>
+        <td>
+           <span>52e-6[m]</span>
+        </td>
+        <td>
+           <span>5.2E−5 m</span>
+        </td>
+        <td>
+           <span>Length of separator</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>L_pos</span>
+        </td>
+        <td>
+           <span>174e-6[m]</span>
+        </td>
+        <td>
+           <span>1.74E−4 m</span>
+        </td>
+        <td>
+           <span>Length of positive electrode</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>C_rate</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>C-rate factor for the parametric study</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Cap</span>
+        </td>
+        <td>
+           <span>5[A*h]</span>
+        </td>
+        <td>
+           <span>18000 C</span>
+        </td>
+        <td>
+           <span>Nominal Cell Capacity (eg)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>t_one_cycle</span>
+        </td>
+        <td>
+           <span>2000 [s] / C_rate</span>
+        </td>
+        <td>
+           <span>2000 s</span>
+        </td>
+        <td>
+           <span>Theoretical time limit for a full limb</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>C</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>k_decay</span>
+        </td>
+        <td>
+           <span>1e-4</span>
+        </td>
+        <td>
+           <span>1E−4</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>R_film_baseline</span>
+        </td>
+        <td>
+           <span>1e-4[ohm*m^2]</span>
+        </td>
+        <td>
+           <span>1E−4 Ω·m²</span>
+        </td>
+        <td>
+           <span>Baseline SEI film resistance at t=0</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>k_res</span>
+        </td>
+        <td>
+           <span>5e-5[ohm*m^2]</span>
+        </td>
+        <td>
+           <span>5E−5 Ω·m²</span>
+        </td>
+        <td>
+           <span>Resistance growth coefficient per full cycle</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs1801312">
+      <a name="cs5213739">
+         <span>1.2. Functions</span>
+      </a>
+    </h3>
+    <h4 id="cs7069826">
+      <a name="cs9614277">
+         <span>1.2.1. Piecewise 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <tr>
+        <td>
+           <span>Function name</span>
+        </td>
+        <td>
+           <span>pw1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Function type</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="battery_sim_final_files/func_pw1.png" alt="func_pw1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5350573">
+         <span>Piecewise 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs7824630">
+           <span>Definition</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Argument</span>
+        </td>
+        <td>
+           <span>t</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Extrapolation</span>
+        </td>
+        <td>
+           <span>Constant</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Smoothing</span>
+        </td>
+        <td>
+           <span>Continuous second derivative</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Transition zone</span>
+        </td>
+        <td>
+           <span>Absolute size</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Size of transition zone</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Smooth at endpoints</span>
+        </td>
+        <td>
+           <span>On</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs8014895">
+           <span>Definition</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Start</span>
+        </th>
+        <th>
+           <span>End</span>
+        </th>
+        <th>
+           <span>Function</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>t_charge_stop</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>t_charge_stop</span>
+        </td>
+        <td>
+           <span>t_charge_stop + t_ocp</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>t_charge_stop + t_ocp</span>
+        </td>
+        <td>
+           <span>t_charge_stop + t_ocp + t_disch_stop</span>
+        </td>
+        <td>
+           <span>-1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>t_charge_stop + t_ocp + t_disch_stop</span>
+        </td>
+        <td>
+           <span>8000</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs1664452">
+           <span>Units</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Arguments</span>
+        </td>
+        <td>
+           <span>s</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Function</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs2728032">
+      <a name="cs8362700">
+         <span>1.2.2. Piecewise 2</span>
+      </a>
+    </h4>
+    <table border="1">
+      <tr>
+        <td>
+           <span>Function name</span>
+        </td>
+        <td>
+           <span>pw2</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Function type</span>
+        </td>
+        <td>
+           <span>Piecewise</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="battery_sim_final_files/func_pw2.png" alt="func_pw2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3502247">
+         <span>Piecewise 2</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs2513247">
+           <span>Definition</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Argument</span>
+        </td>
+        <td>
+           <span>t</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Extrapolation</span>
+        </td>
+        <td>
+           <span>Constant</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Smoothing</span>
+        </td>
+        <td>
+           <span>Continuous second derivative</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Transition zone</span>
+        </td>
+        <td>
+           <span>Absolute size</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Size of transition zone</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Smooth at endpoints</span>
+        </td>
+        <td>
+           <span>On</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6487087">
+           <span>Definition</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Start</span>
+        </th>
+        <th>
+           <span>End</span>
+        </th>
+        <th>
+           <span>Function</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>0</span>
+        </td>
+        <td>
+           <span>t_one_cycle</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>t_one_cycle</span>
+        </td>
+        <td>
+           <span>t_one_cycle + t_ocp</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>t_one_cycle + t_ocp</span>
+        </td>
+        <td>
+           <span>2*t_one_cycle+t_ocp</span>
+        </td>
+        <td>
+           <span>-1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>2*t_one_cycle+t_ocp</span>
+        </td>
+        <td>
+           <span>2*t_one_cycle+2*t_ocp</span>
+        </td>
+        <td>
+           <span>0</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs8430510">
+           <span>Units</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Arguments</span>
+        </td>
+        <td>
+           <span>s</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Function</span>
+        </td>
+        <td>
+           <span>1</span>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs5785558">
+      <a name="cs6448839">
+         <span>2. Component 1</span>
+      </a>
+    </h2>
+    <h3 id="cs5104549">
+      <a name="cs4437144">
+         <span>2.1. Definitions</span>
+      </a>
+    </h3>
+    <h4 id="cs2949844">
+      <a name="cs5937587">
+         <span>2.1.1. Variables</span>
+      </a>
+    </h4>
+    <h5 id="cs2132720">
+      <a name="cs8574776">
+         <span>Variables (Positive Current Collector)</span>
+      </a>
+    </h5>
+    <table border="1">
+      <caption>
+        <a name="cs9075412">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Geometry geom1: Dimension 0: Boundary 1</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <tr>
+        <th>
+           <span>Name</span>
+        </th>
+        <th>
+           <span>Expression</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+        <th>
+           <span>Description</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>i_app</span>
+        </td>
+        <td>
+           <span>pw1(t)*i_1C</span>
+        </td>
+        <td>
+           <span>A/m²</span>
+        </td>
+        <td>
+           <span>Applied battery cell current density</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>i_app_2</span>
+        </td>
+        <td>
+           <span>pw2(t)*i_1C</span>
+        </td>
+        <td>
+           <span>A/m²</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>alpha</span>
+        </td>
+        <td>
+           <span>1 - (k_decay * Q_thr)</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+        <td>
+           <span>Active material fraction</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs9616887">
+      <a name="cs4078040">
+         <span>2.1.2. Nonlocal Couplings</span>
+      </a>
+    </h4>
+    <h5 id="cs5056522">
+      <a name="cs9977554">
+         <span>Integration 1</span>
+      </a>
+    </h5>
+    <table border="1">
+      <tr>
+        <td>
+           <span>Coupling type</span>
+        </td>
+        <td>
+           <span>Integration</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Operator name</span>
+        </td>
+        <td>
+           <span>PositiveCC</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2741271">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Geometry geom1: Dimension 0: Boundary 1</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="battery_sim_final_files/cpl_intop1_view1.png" alt="cpl_intop1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs7420058">
+         <span>Selection</span>
+      </a>
+    </p>
+    <h3 id="cs3432513">
+      <a name="cs2220491">
+         <span>2.2. Geometry 1</span>
+      </a>
+    </h3>
+    <p>
+      <img src="battery_sim_final_files/geom_geom1_view1.png" alt="geom_geom1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs9888090">
+         <span>Geometry 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs4408880">
+           <span>Units</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Length unit</span>
+        </td>
+        <td>
+           <span>µm</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Angular unit</span>
+        </td>
+        <td>
+           <span>deg</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs6058352">
+      <a name="cs6673103">
+         <span>2.3. Materials</span>
+      </a>
+    </h3>
+    <h4 id="cs1337780">
+      <a name="cs2256970">
+         <span>2.3.1. Polypropylene polymer</span>
+      </a>
+    </h4>
+    <p>
+      <img src="battery_sim_final_files/mat_mat2_view1.png" alt="mat_mat2_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs2361471">
+         <span>Polypropylene polymer</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs1875741">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Geometry geom1: Dimension 1: No domains </span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs3856766">
+      <a name="cs5348940">
+         <span>2.3.2. Graphite, LixC6 MCMB (Negative, Li-ion Battery)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="battery_sim_final_files/mat_mat3_view1.png" alt="mat_mat3_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs1329156">
+         <span>Graphite, LixC6 MCMB (Negative, Li-ion Battery)</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs7957936">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Geometry geom1: Dimension 1: No domains </span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs9829736">
+      <a name="cs8694693">
+         <span>2.3.3. LiPF6 in 1:1 EC:DMC (Liquid, Li-ion Battery)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="battery_sim_final_files/mat_mat4_view1.png" alt="mat_mat4_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs1969807">
+         <span>LiPF6 in 1:1 EC:DMC (Liquid, Li-ion Battery)</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs3813598">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Geometry geom1: Dimension 1: Domains 2–3</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs8391848">
+      <a name="cs6944466">
+         <span>2.3.4. Material Switch 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <tr>
+        <td>
+           <span>Cases</span>
+        </td>
+        <td>
+           <span>LCO, LiCoO2 (Positive, Li-ion Battery), NMC 111, LiNi0.33Mn0.33Co0.33O2 (Positive, Li-ion Battery)</span>
+        </td>
+      </tr>
+    </table>
+    <h5 id="cs2290655">
+      <a name="cs6526381">
+         <span>LCO, LiCoO2 (Positive, Li-ion Battery)</span>
+      </a>
+    </h5>
+    <h5 id="cs5468502">
+      <a name="cs6004815">
+         <span>NMC 111, LiNi0.33Mn0.33Co0.33O2 (Positive, Li-ion Battery)</span>
+      </a>
+    </h5>
+    <h3 id="cs1720630">
+      <a name="cs3280981">
+         <span>2.4. Lithium-Ion Battery</span>
+      </a>
+    </h3>
+    <p>
+      <img src="battery_sim_final_files/phys_liion_view1.png" alt="phys_liion_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs6996142">
+         <span>Lithium-Ion Battery</span>
+      </a>
+    </p>
+    <div class="TableHeading" id="cs3118304">
+       <span>Equations</span>
+    </div>
+    <p>
+      <img src="battery_sim_final_files/equ_liion_1.png" alt="equ_liion_1.png" width="53" height="16" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="battery_sim_final_files/equ_liion_2.png" alt="equ_liion_2.png" width="54" height="16" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="battery_sim_final_files/equ_liion_3.png" alt="equ_liion_3.png" width="59" height="16" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="battery_sim_final_files/equ_liion_4.png" alt="equ_liion_4.png" width="101" height="30" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="battery_sim_final_files/equ_liion_5.png" alt="equ_liion_5.png" width="249" height="39" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="battery_sim_final_files/equ_liion_6.png" alt="equ_liion_6.png" width="72" height="17" style="padding-left:18pt;border:none" />
+    </p>
+    <p>
+      <img src="battery_sim_final_files/equ_liion_7.png" alt="equ_liion_7.png" width="179" height="17" style="padding-left:18pt;border:none" />
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs2127913">
+           <span>Features</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Name</span>
+        </th>
+        <th>
+           <span>Level</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>SOC and Initial Charge Distribution</span>
+        </td>
+        <td>
+           <span>Global</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Separator 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>No Flux 1</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Insulation 1</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Initial Values 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Porous Electrode 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Porous Electrode 2</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Electric Ground 1</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Charge-Discharge Cycling 1</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs2403856">
+      <a name="cs2373234">
+         <span>2.5. Mesh 1</span>
+      </a>
+    </h3>
+    <p>
+      <img src="battery_sim_final_files/mesh_mesh1_view1.png" alt="mesh_mesh1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5937878">
+         <span>Mesh 1</span>
+      </a>
+    </p>
+    <h4 id="cs4620353">
+      <a name="cs9630966">
+         <span>2.5.1. Size (size)</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs8042148">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Maximum element size</span>
+        </td>
+        <td>
+           <span>12.1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Minimum element size</span>
+        </td>
+        <td>
+           <span>0.054</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Curvature factor</span>
+        </td>
+        <td>
+           <span>0.3</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Maximum element growth rate</span>
+        </td>
+        <td>
+           <span>1.3</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs7851217">
+      <a name="cs6289832">
+         <span>2.5.2. Size 1 (size1)</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs8245303">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Geometry geom1: Dimension 1: Domains 1, 3</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="battery_sim_final_files/mesh_mesh1_size1_view1.png" alt="mesh_mesh1_size1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs2893026">
+         <span>Size 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs4244173">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Maximum element size</span>
+        </td>
+        <td>
+           <span>6.66</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Minimum element size</span>
+        </td>
+        <td>
+           <span>0.0225</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Curvature factor</span>
+        </td>
+        <td>
+           <span>0.25</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Maximum element growth rate</span>
+        </td>
+        <td>
+           <span>1.25</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Predefined size</span>
+        </td>
+        <td>
+           <span>Finer</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs6646171">
+      <a name="cs7775758">
+         <span>2.5.3. Size 2 (size2)</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs7027357">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Geometry geom1: Dimension 0: Boundaries 2–3</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="battery_sim_final_files/mesh_mesh1_size2_view1.png" alt="mesh_mesh1_size2_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs1966187">
+         <span>Size 2</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs5047706">
+           <span>Settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Maximum element size</span>
+        </td>
+        <td>
+           <span>1.8</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Minimum element size</span>
+        </td>
+        <td>
+           <span>0.0036</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Curvature factor</span>
+        </td>
+        <td>
+           <span>0.2</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Predefined size</span>
+        </td>
+        <td>
+           <span>Extremely fine</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs5326047">
+      <a name="cs9429783">
+         <span>2.5.4. Edge 1 (edg1)</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs1197141">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Remaining</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="battery_sim_final_files/mesh_mesh1_edg1_view1.png" alt="mesh_mesh1_edg1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs1044115">
+         <span>Edge 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs4399830">
+           <span>Information</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Last build time</span>
+        </td>
+        <td>
+           <span>&lt; 1 second</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Built with</span>
+        </td>
+        <td>
+           <span>COMSOL 6.3.0.638 (win64), May 31, 2026, 2:45:17 AM</span>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs2269225">
+      <a name="cs8859486">
+         <span>3. Study 2</span>
+      </a>
+    </h2>
+    <table border="1">
+      <caption>
+        <a name="cs3472833">
+           <span>Computation information</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Computation time</span>
+        </td>
+        <td>
+           <span>10 min 31 s</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs2134234">
+      <a name="cs4549910">
+         <span>3.1. Parametric Sweep</span>
+      </a>
+    </h3>
+    <table border="1">
+      <tr>
+        <th>
+           <span>Parameter name</span>
+        </th>
+        <th>
+           <span>Parameter value list</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>C_rate</span>
+        </td>
+        <td>
+           <span>0.5 1 2</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs4135447">
+           <span>Study settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Sweep type</span>
+        </td>
+        <td>
+           <span>Specified combinations</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Parameter name</span>
+        </td>
+        <td>
+           <span>C_rate</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7009339">
+           <span>Parameters</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Parameter name</span>
+        </th>
+        <th>
+           <span>Parameter value list</span>
+        </th>
+        <th>
+           <span>Parameter unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>C_rate (C-rate factor for the parametric study)</span>
+        </td>
+        <td>
+           <span>0.5 1 2</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs7422681">
+      <a name="cs7525731">
+         <span>3.2. Material Sweep</span>
+      </a>
+    </h3>
+    <table border="1">
+      <caption>
+        <a name="cs4138292">
+           <span>Study settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Sweep type</span>
+        </td>
+        <td>
+           <span>All combinations</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9658518">
+           <span>Study settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Switch</span>
+        </th>
+        <th>
+           <span>Cases</span>
+        </th>
+        <th>
+           <span>Case numbers</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Material Switch 1 (sw1)</span>
+        </td>
+        <td>
+           <span>All</span>
+        </td>
+        <td>
+           <span>range(1,1,2)</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs2922589">
+      <a name="cs4805677">
+         <span>3.3. Current Distribution Initialization</span>
+      </a>
+    </h3>
+    <table border="1">
+      <caption>
+        <a name="cs9845116">
+           <span>Study settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Include geometric nonlinearity</span>
+        </td>
+        <td>
+           <span>Off</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9043961">
+           <span>Physics and variables selection</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Key</span>
+        </th>
+        <th>
+           <span>Solve for</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Lithium-Ion Battery (liion)</span>
+        </td>
+        <td>
+           <span>On</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>State Variables 1 (state1)</span>
+        </td>
+        <td>
+           <span>On</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs8240053">
+           <span>Store in output</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Interface</span>
+        </th>
+        <th>
+           <span>Output</span>
+        </th>
+        <th>
+           <span>Selection</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Lithium-Ion Battery (liion)</span>
+        </td>
+        <td>
+           <span>Physics controlled</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>State Variables 1 (state1)</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs5563344">
+           <span>Mesh selection</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Component</span>
+        </th>
+        <th>
+           <span>Mesh</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Component 1</span>
+        </td>
+        <td>
+           <span>Mesh 1</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs1830698">
+      <a name="cs8488050">
+         <span>3.4. Time Dependent</span>
+      </a>
+    </h3>
+    <table border="1">
+      <tr>
+        <th>
+           <span>Times</span>
+        </th>
+        <th>
+           <span>Unit</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>range(0, 100, 40000)</span>
+        </td>
+        <td>
+           <span>s</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs4199552">
+           <span>Study settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Include geometric nonlinearity</span>
+        </td>
+        <td>
+           <span>Off</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9819118">
+           <span>Study settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Output times</span>
+        </td>
+        <td>
+           <span>{0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100, 3200, 3300, 3400, 3500, 3600, 3700, 3800, 3900, 4000, 4100, 4200, 4300, 4400, 4500, 4600, 4700, 4800, 4900, 5000, 5100, 5200, 5300, 5400, 5500, 5600, 5700, 5800, 5900, 6000, 6100, 6200, 6300, 6400, 6500, 6600, 6700, 6800, 6900, 7000, 7100, 7200, 7300, 7400, 7500, 7600, 7700, 7800, 7900, 8000, 8100, 8200, 8300, 8400, 8500, 8600, 8700, 8800, 8900, 9000, 9100, 9200, 9300, 9400, 9500, 9600, 9700, 9800, 9900, 10000, 10100, 10200, 10300, 10400, 10500, 10600, 10700, 10800, 10900, 11000, 11100, 11200, 11300, 11400, 11500, 11600, 11700, 11800, 11900, 12000, 12100, 12200, 12300, 12400, 12500, 12600, 12700, 12800, 12900, 13000, 13100, 13200, 13300, 13400, 13500, 13600, 13700, 13800, 13900, 14000, 14100, 14200, 14300, 14400, 14500, 14600, 14700, 14800, 14900, 15000, 15100, 15200, 15300, 15400, 15500, 15600, 15700, 15800, 15900, 16000, 16100, 16200, 16300, 16400, 16500, 16600, 16700, 16800, 16900, 17000, 17100, 17200, 17300, 17400, 17500, 17600, 17700, 17800, 17900, 18000, 18100, 18200, 18300, 18400, 18500, 18600, 18700, 18800, 18900, 19000, 19100, 19200, 19300, 19400, 19500, 19600, 19700, 19800, 19900, 20000, 20100, 20200, 20300, 20400, 20500, 20600, 20700, 20800, 20900, 21000, 21100, 21200, 21300, 21400, 21500, 21600, 21700, 21800, 21900, 22000, 22100, 22200, 22300, 22400, 22500, 22600, 22700, 22800, 22900, 23000, 23100, 23200, 23300, 23400, 23500, 23600, 23700, 23800, 23900, 24000, 24100, 24200, 24300, 24400, 24500, 24600, 24700, 24800, 24900, 25000, 25100, 25200, 25300, 25400, 25500, 25600, 25700, 25800, 25900, 26000, 26100, 26200, 26300, 26400, 26500, 26600, 26700, 26800, 26900, 27000, 27100, 27200, 27300, 27400, 27500, 27600, 27700, 27800, 27900, 28000, 28100, 28200, 28300, 28400, 28500, 28600, 28700, 28800, 28900, 29000, 29100, 29200, 29300, 29400, 29500, 29600, 29700, 29800, 29900, 30000, 30100, 30200, 30300, 30400, 30500, 30600, 30700, 30800, 30900, 31000, 31100, 31200, 31300, 31400, 31500, 31600, 31700, 31800, 31900, 32000, 32100, 32200, 32300, 32400, 32500, 32600, 32700, 32800, 32900, 33000, 33100, 33200, 33300, 33400, 33500, 33600, 33700, 33800, 33900, 34000, 34100, 34200, 34300, 34400, 34500, 34600, 34700, 34800, 34900, 35000, 35100, 35200, 35300, 35400, 35500, 35600, 35700, 35800, 35900, 36000, 36100, 36200, 36300, 36400, 36500, 36600, 36700, 36800, 36900, 37000, 37100, 37200, 37300, 37400, 37500, 37600, 37700, 37800, 37900, 38000, 38100, 38200, 38300, 38400, 38500, 38600, 38700, 38800, 38900, 39000, 39100, 39200, 39300, 39400, 39500, 39600, 39700, 39800, 39900, 40000}</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs2533556">
+           <span>Physics and variables selection</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Key</span>
+        </th>
+        <th>
+           <span>Solve for</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Lithium-Ion Battery (liion)</span>
+        </td>
+        <td>
+           <span>On</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>State Variables 1 (state1)</span>
+        </td>
+        <td>
+           <span>On</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs3439524">
+           <span>Store in output</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Interface</span>
+        </th>
+        <th>
+           <span>Output</span>
+        </th>
+        <th>
+           <span>Selection</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Lithium-Ion Battery (liion)</span>
+        </td>
+        <td>
+           <span>Physics controlled</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>State Variables 1 (state1)</span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+        <td>
+           <span></span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7780515">
+           <span>Mesh selection</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Component</span>
+        </th>
+        <th>
+           <span>Mesh</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Component 1</span>
+        </td>
+        <td>
+           <span>Mesh 1</span>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs4920658">
+      <a name="cs9178754">
+         <span>4. Results</span>
+      </a>
+    </h2>
+    <h3 id="cs4663117">
+      <a name="cs6594452">
+         <span>4.1. Datasets</span>
+      </a>
+    </h3>
+    <h4 id="cs3045868">
+      <a name="cs2936454">
+         <span>4.1.1. Study 2/Solution 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs5463632">
+           <span>Solution</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Solution</span>
+        </td>
+        <td>
+           <span>Solution 1 (sol1)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Component</span>
+        </td>
+        <td>
+           <span>Component 1 (comp1)</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="battery_sim_final_files/dset_dset1.png" alt="dset_dset1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs7062718">
+         <span>Dataset: Study 2/Solution 1</span>
+      </a>
+    </p>
+    <h4 id="cs9451147">
+      <a name="cs2194036">
+         <span>4.1.2. Study 2/Solution Store 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs9051282">
+           <span>Solution</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Solution</span>
+        </td>
+        <td>
+           <span>Solution Store 1 (sol2)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Component</span>
+        </td>
+        <td>
+           <span>Component 1 (comp1)</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="battery_sim_final_files/dset_dset2.png" alt="dset_dset2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs9013274">
+         <span>Dataset: Study 2/Solution Store 1</span>
+      </a>
+    </p>
+    <h4 id="cs9815703">
+      <a name="cs9387423">
+         <span>4.1.3. Study 2/Parametric Solutions 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs5172288">
+           <span>Solution</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Solution</span>
+        </td>
+        <td>
+           <span>Parametric Solutions 1 (sol3)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Component</span>
+        </td>
+        <td>
+           <span>Component 1 (comp1)</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="battery_sim_final_files/dset_dset3.png" alt="dset_dset3.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5848003">
+         <span>Dataset: Study 2/Parametric Solutions 1</span>
+      </a>
+    </p>
+    <h3 id="cs1953823">
+      <a name="cs2847258">
+         <span>4.2. Plot Groups</span>
+      </a>
+    </h3>
+    <h4 id="cs6497580">
+      <a name="cs7052285">
+         <span>4.2.1. Boundary Electrode Potential with Respect to Ground (liion)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="battery_sim_final_files/pg_pg1.png" alt="pg_pg1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3787443">
+         <span>Global: Cell potential (V)</span>
+      </a>
+    </p>
+    <h4 id="cs2626456">
+      <a name="cs2246567">
+         <span>4.2.2. Cell Current (liion)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="battery_sim_final_files/pg_pg2.png" alt="pg_pg2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3753341">
+         <span>Global: Cell current (A)</span>
+      </a>
+    </p>
+    <h4 id="cs5341493">
+      <a name="cs9523636">
+         <span>4.2.3. Cell and Average Electrode Cell State of Charge (liion)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="battery_sim_final_files/pg_pg3.png" alt="pg_pg3.png" width="480" height="360" />
+    </p>
+    <h4 id="cs4814997">
+      <a name="cs6085253">
+         <span>4.2.4. Electrolyte Potential (liion)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="battery_sim_final_files/pg_pg4.png" alt="pg_pg4.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs6863797">
+         <span>Line Graph: Electrolyte potential (V)</span>
+      </a>
+    </p>
+    <h4 id="cs9975793">
+      <a name="cs7927432">
+         <span>4.2.5. Electrode Potential with Respect to Ground (liion)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="battery_sim_final_files/pg_pg5.png" alt="pg_pg5.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs7856024">
+         <span>Line Graph: Electric potential (V)</span>
+      </a>
+    </p>
+    <h4 id="cs3616403">
+      <a name="cs6999228">
+         <span>4.2.6. Electrolyte Salt Concentration (liion)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="battery_sim_final_files/pg_pg6.png" alt="pg_pg6.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3104852">
+         <span>Line Graph: Electrolyte salt concentration (mol/m</span><span class="SuperscriptBodyText">3</span><span>)</span>
+      </a>
+    </p>
+  </body>
+</html>
