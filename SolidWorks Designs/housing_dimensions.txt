@@ -1,0 +1,5 @@
+﻿"Housing_OD"= 45mm
+"Housing_Wall"= 1.5mm
+"Stack_ID"= 28mm
+"Ampoule_OD"= 25.5mm
+"Cell_Height"= 1.66mm
